@@ -143,9 +143,11 @@ h1, h2, h3, h4, p{
 
 .philosophy-title h1{
   font-size: 2.5rem;
-  border-bottom: 1px solid #f098d4;
-  border-image: linear-gradient(to left,  #9cf1d4 0%, #f098d4 100%);
-  border-image-slice: 1;
+  border-style: solid;
+  border-image: linear-gradient(to left,  #9cf1d4 0%, #f098d4 100%) 1/0 0 1px 0;
+  /* border-bottom: 1px solid #f098d4; */
+  /* border-image: linear-gradient(to left,  #9cf1d4 0%, #f098d4 100%); */
+  /* border-image-slice: 1; */
   margin-bottom: 3rem;
 }
 
@@ -222,17 +224,18 @@ h1, h2, h3, h4, p{
   font-size:2rem;
   text-align: right;
   padding:4rem 2rem 0 0;
-  border-bottom: 1px solid #fff;
-  border-image: linear-gradient(to left,  silver 0%, #fff 100%);
-  border-image-slice: 1;
+  border-style: solid;
+  border-image: linear-gradient(to left,  silver 0%, #fff 100%) 1/0 0 1px 0;
+  /* border-image-slice: 1; */
 }
 
 .even h2{
   font-size:2rem;
   padding:4rem 0 0 2rem;
-  border-bottom: 1px solid #fff;
-  border-image: linear-gradient(to right,  silver 0%, #fff 100%);
-  border-image-slice: 1;
+  /* border-image: linear-gradient(to right,  silver 0%, #fff 100%); */
+  border-style: solid;
+  border-image: linear-gradient(to right,  silver 0%, #fff 100%) 1/0 0 1px 0;
+  /* border-image-slice: 1; */
 }
 
 .odd p{
@@ -267,9 +270,11 @@ h1, h2, h3, h4, p{
 
 .overview h1{
   font-size: 2.5rem;
-  border-bottom: 1px solid #f098d4;
-  border-image: linear-gradient(to right,  #9cf1d4 0%, #f098d4 100%);
-  border-image-slice: 1;
+  /* border-bottom: 1px solid #f098d4; */
+  border-style: solid;
+  border-image: linear-gradient(to right,  #9cf1d4 0%, #f098d4 100%) 1/0 0 1px 0;
+  /* border-image-slice: 1; */
+  /* border-image: linear-gradient(to right,  silver 0%, #fff 100%) 1/0 0 1px 0; */
   margin-bottom:3rem;
 }
 
@@ -468,9 +473,11 @@ table td{
 
 .history-title h1{
   font-size: 2.5rem;
-  border-bottom: 1px solid #f098d4;
-  border-image: linear-gradient(to left, #9cf1d4 0%, #f098d4 100%);
-  border-image-slice: 1;
+  border-style: solid;
+  border-image: linear-gradient(to left,  #9cf1d4 0%, #f098d4 100%) 1/0 0 1px 0;
+  /* border-bottom: 1px solid #f098d4; */
+  /* border-image: linear-gradient(to left, #9cf1d4 0%, #f098d4 100%); */
+  /* border-image-slice: 1; */
   margin-bottom: 3rem;
 }
 
@@ -536,9 +543,11 @@ table td{
 
 .contact-title h1 {
   font-size:2.5rem;
-  border-bottom: 1px solid #f098d4;
-  border-image: linear-gradient(to right, #9cf1d4 0%, #f098d4 100%);
-  border-image-slice: 1;
+  border-style: solid;
+  /* border-image: linear-gradient(to right, rgb(139, 138, 138) 0%, #fff 100%) 1/0 0 1px 0; */
+  /* border-bottom: 1px solid #f098d4; */
+  border-image: linear-gradient(to right, #9cf1d4 0%, #f098d4 100%) 1/0 0 1px 0;
+  /* border-image-slice: 1; */
   margin-bottom: 3rem;
   text-transform: uppercase;
 }
@@ -557,8 +566,9 @@ table td{
   border-radius:3px;
 }
 
-.contactform h5{
+.contactform h3{
   margin:2rem 0;
+  font-size:16px;
 }
 
 .contactform input.form-fields,
@@ -796,9 +806,9 @@ table td{
   width:100%;
   padding:0;
   margin-bottom: 1rem;
-  border-bottom: 1px solid #fff;
-  border-image: linear-gradient(to right, rgb(139, 138, 138) 0%, #fff 100%);
-  border-image-slice: 1
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(139, 138, 138) 0%, #fff 100%) 1/0 0 1px 0;
+  /* border-image-slice: 1 */
 }
 .historycontainer p{
   width:100%;
@@ -843,8 +853,8 @@ table td{
 .contact-main{
   display: block;
   padding-top: 0;
-  margin-bottom: 0;
-  padding: 0 2rem;
+  margin:2rem 0 0;
+  padding: 0 1rem;
 }
 .contact-title{
   margin: 0;
@@ -862,22 +872,25 @@ table td{
   padding: 2rem 1rem 3rem;
 }
 .contactform h5{
-  font-size:0.5rem;
+  font-size:1rem;
 }
 .contactform input.form-fields, .contactform button.form-fields, .contactform textarea.form-fields{
   width:80%;
-  font-size:0.85rem;
-  min-height:2rem;
+  font-size:1rem;
+  min-height:2.5rem;
 }
 .material-icons:not(#open, #close){
-  top:2rem;
-  left:-5.7rem;
+  top:2.2rem;
+  left:-6.7rem;
   font-size:1rem
 }
 .gradient4{
   margin-top:2rem;
-  padding:0.5rem 2.5rem;
-  font-size:0.85rem;
+  padding:0.5rem 4.5rem;
+  font-size:1rem;
 }
 
 }
+@media screen and (min-width: 480px){
+  .br-sp {display: none; }
+  }
